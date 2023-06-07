@@ -5,4 +5,4 @@
      5. ls -la: Displays the content of the current directories content in long format, even the ones with .
      6. ls -lan: Dispalys current directory's content in long format including user with ID and files with hidden characters
      7:/tmp$ mkdir my_first_directory : Creates the directory "my_first_directory" in the directory, "tmp" 
-
+     8.mv -p /tmp/betty /tmp/my_first_directory/:Script used to move the filr betty from tmp to tmp/my_first_directory
