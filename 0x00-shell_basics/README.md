@@ -6,4 +6,6 @@
      6. ls -lan: Dispalys current directory's content in long format including user with ID and files with hidden characters
      7:/tmp$ mkdir my_first_directory : Creates the directory "my_first_directory" in the directory, "tmp" 
      8.mv -p /tmp/betty /tmp/my_first_directory/:Script used to move the filr betty from tmp to tmp/my_first_directory
-     9. rm /tmp/my_first_directory/betty: Deleting the file betty from the directory in tmp directory9. rm /tmp/my_first_directory/betty: Deleting the file betty from the directory in tmp directory9. rm /tmp/my_first_directory/betty: Deleting the file betty from the directory in tmp directory... 
+     9. rm /tmp/my_first_directory/betty: Deleting the file betty from the directory in tmp directory.
+     10. rm -r /tmp/my_first_directory: Deleting the directory my_first_directory.
+     11. cd - : a script that changes the working directory to the previous one.
