@@ -1,0 +1,2 @@
+#!/bin/bash 
+ls -A -1 | sed s/$/,/ | awk { printf %s, /bin/bash } END { print  }

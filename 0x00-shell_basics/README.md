@@ -18,4 +18,5 @@
 You can assume that the directory /tmp/u will exist when we will run your script. 
      17: rm -f *~ : a script that deletes all files in the current working directory that end with the character ~
       18: mkdir welcome; mkdir welcome/to; mkdir welcome/to/school: Creating the three directories oin the current working directory.
+      19: ls -A -1 | sed 's/$/,/' | awk '{ printf "%s", $0 } END { print "" }' ..
       
