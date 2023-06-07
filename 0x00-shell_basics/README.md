@@ -16,3 +16,4 @@
      16: mv [A-Z]* /tmp/u/:  a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
 
 You can assume that the directory /tmp/u will exist when we will run your script. 
+     17: rm -f *~ : a script that deletes all files in the current working directory that end with the character ~
