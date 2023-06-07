@@ -11,3 +11,4 @@
      11. cd - : a script that changes the working directory to the previous one.
      12. ls -la "$(pwd)" "$(dirname "$(pwd)")" /boot: Displaying all content in the in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
      13: file -b /tmp/iamafile:  a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script.
+     14.ln -s /bin/ls __ls__ : Used to create a symbolic link.
