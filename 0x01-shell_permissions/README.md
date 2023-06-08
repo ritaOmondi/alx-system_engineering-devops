@@ -15,4 +15,4 @@
      14. chown vincent:staff *:  a script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory. 
       15. chown -h vincent:staff _hello:
       16.chown --from=guillaume betty hello
-      17. 
+      17.telnet towel.blinkenlights.nl 
