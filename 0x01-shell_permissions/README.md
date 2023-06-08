@@ -7,4 +7,6 @@
       6. ug+x,o+r: gives executable rights to user and the group owner, as well as giving reading rights to other users.
       7. ugo+x or a+x hello: gives executable rightsto all references.
       8. chmod 007 hello: giving all rights to other users and deniying group and owners.
-      9.chmod 753 hello: interpreting -rwxr-r-wx without commas 
+      9.chmod 753 hello: interpreting -rwxr-r-wx without commas.
+      10. chmod --reference=olleh hello: sets the mode of the file hello the same as olleh’s mode.
+      11.  
