@@ -9,4 +9,5 @@
       8. chmod 007 hello: giving all rights to other users and deniying group and owners.
       9.chmod 753 hello: interpreting -rwxr-r-wx without commas.
       10. chmod --reference=olleh hello: sets the mode of the file hello the same as olleh’s mode.
-      11.  
+      11.chmod -R ugo+x .: script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users.
+      12.   
