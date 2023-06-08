@@ -1,1 +1,2 @@
-      1. su better: changes the user to better
+      1. su betty : changes the user to better
+      2. whoami : command used to print the usernam eof the current user
