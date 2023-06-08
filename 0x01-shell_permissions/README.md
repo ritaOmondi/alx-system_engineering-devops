@@ -12,4 +12,5 @@
       11.chmod -R ugo+x .: script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users.
       12.mkdir -m 751 my_dir:script that creates a directory called my_dir with permissions 751 in the working directory.
       13. chgrp: used to change group owner of a particular file.
-      
+     14. chown vincent:staff *:  a script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory. 
+      15.
