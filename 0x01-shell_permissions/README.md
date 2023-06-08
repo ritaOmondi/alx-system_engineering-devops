@@ -4,4 +4,5 @@
       3. chown betty hello:  used to change owenership of file hello to the user betty.
       4. touch hello : creates an empty file called hello
       5. chmod u+x hello :  a script that adds execute permission to the owner of the file hello
-      
+      6. ug+x,o+r: gives executable rights to user and the group owner, as well as giving reading rights to other users.
+      7.  
