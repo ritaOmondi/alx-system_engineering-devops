@@ -20,4 +20,5 @@
 18. grep "^[[:alpha:]]" /etc/ssh/sshd_config
 19. tr 'A' 'z' |tr 'c' 'e'
 20. tr -d "cC": Create a script that removes all letters c and C from input.
-21.    
+21. rev : used to reverse input
+22.    
