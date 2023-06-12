@@ -12,4 +12,4 @@
 10. find . -type f -name "*.js" -delete.
 11. find . mindepth -type d | wc -l.
 12. ls -t | head 
-13. 
+13. sort | uniq -u : sorting  and printing unique words 
