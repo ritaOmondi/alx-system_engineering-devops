@@ -19,4 +19,5 @@
 17. grep -v "bin" /etc/passwd: Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
 18. grep "^[[:alpha:]]" /etc/ssh/sshd_config
 19. tr 'A' 'z' |tr 'c' 'e'
-20.   
+20. tr -d "cC": Create a script that removes all letters c and C from input.
+21.    
