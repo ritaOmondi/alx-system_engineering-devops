@@ -15,4 +15,5 @@
 13. sort | uniq -u : sorting  and printing unique words.
 14. grep "root"/etc/passwd.
 15. grep -c "bin" /etc/password: Display the number of lines that contain the pattern “bin” in the file /etc/passwd.
-16.  
+16. grep -A 3 "root" /etc/passwd:Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
+17.  
