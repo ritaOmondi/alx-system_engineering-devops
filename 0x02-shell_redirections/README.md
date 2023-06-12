@@ -7,4 +7,5 @@
 5. head /etc/passwd : Script for displaying the first 10 lines of a file.
 6. head -n 3 iacta | tail -n 1: Displaying the 3rd line of a file.
 7. echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:). Creating a file a inserting content in the file.
-8.
+8. ls -la > ls_cwd_content : Copying the content to the file "ls_cwd_content"
+9.
