@@ -24,4 +24,5 @@
 22. cut -d ":" -f1,6 /etc/passwd | sort :Write a script that displays all users and their home directories, sorted by users 
 23. find . -empty |rev| cut -d '/' -f 1 |rev
 24.find -type f -name "*.git" |rev | cut -d "/" -f 1 | cut -d '.' 2- |rev | LC_ALL=C sort -f
-25.   
+25.  cut -c 1 | paste -s -d ''
+26.   
