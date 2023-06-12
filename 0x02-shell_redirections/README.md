@@ -9,4 +9,5 @@
 7. echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:). Creating a file a inserting content in the file.
 8. ls -la > ls_cwd_content : Copying the content to the file "ls_cwd_content"
 9. tail -n 1 iacta >> iacta : duplicating the last line in a file.
-10. 
+10. find . -type f -name "*.js" -delete.
+11. 
