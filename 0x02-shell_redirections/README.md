@@ -4,4 +4,7 @@
 2. cat /etc/passwd : used to display the content of that file
 3. cat /etc/passwd  /etc/hosts  : Displaying the content of two files
 4.tail /etc/passwd : command used to display the last 10n lines of a file. 
-5. 
+5. head /etc/passwd : Script for displaying the first 10 lines of a file.
+6. head -n 3 iacta | tail -n 1: Displaying the 3rd line of a file.
+7. echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:). Creating a file a inserting content in the file.
+8.
