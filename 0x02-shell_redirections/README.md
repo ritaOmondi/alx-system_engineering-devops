@@ -10,4 +10,5 @@
 8. ls -la > ls_cwd_content : Copying the content to the file "ls_cwd_content"
 9. tail -n 1 iacta >> iacta : duplicating the last line in a file.
 10. find . -type f -name "*.js" -delete.
-11. 
+11. find . mindepth -type d | wc -l.
+12.   
