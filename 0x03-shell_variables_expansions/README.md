@@ -12,5 +12,7 @@
 10. echo $((BREATH**LOVE)): Exponential values.
 11. echo $((2#BINARY)): converting a number from base 2 to base 10.
 12. echo {a..z}{a..z} | tr '' '\n' | grep -v "oo"
-13. printf '%.2f\n' $NUM
-14.  
+13. printf '%.2f\n' $NUM : a script that prints a number with two decimal places
+14.printf '%x\n' $DECIMAL: a script that converts a number from base 10 to base 16.
+15. tr 'A-Za-z' 'N-ZA-Mn-za-m': a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+16.    
