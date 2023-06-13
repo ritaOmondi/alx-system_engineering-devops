@@ -6,4 +6,5 @@
 4. Printenv: lists all global variables.
 5. set: command used to list all varibales and functions
 6. BEST="School" : creating a new local variable
-7.    
+7. export BEST= "School": converting local variable to environment variable.
+8.     
