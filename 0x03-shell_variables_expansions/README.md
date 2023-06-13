@@ -9,4 +9,5 @@
 7. export BEST= "School": converting local variable to environment variable.
 8. echo $((128 + $TRUKNOWLEDGE)): The sum of 128 and the value held id variable "TRUKNOWLEDGE"
 9. echo $((POWER/DIVIDE)): Dividing two global variables
-10.    
+10. echo $((BREATH**LOVE)): Exponential values.
+11.    
