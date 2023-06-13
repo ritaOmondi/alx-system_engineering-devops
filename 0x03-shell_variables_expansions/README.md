@@ -11,4 +11,5 @@
 9. echo $((POWER/DIVIDE)): Dividing two global variables
 10. echo $((BREATH**LOVE)): Exponential values.
 11. echo $((2#BINARY)): converting a number from base 2 to base 10.
-12. 
+12. echo {a..z}{a..z} | tr '' '\n' | grep -v "oo"
+13.  
