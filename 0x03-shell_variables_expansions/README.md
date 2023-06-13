@@ -4,4 +4,6 @@
 2. PATH=$PATH:/action: Add /action to the PATH. /action should be the last directory the shell looks into when looking for a program
 3. echo $PATH | tr ':' '\n' | wc -1 : counting the number of directories in PATH
 4. Printenv: lists all global variables.
-5. set: command used to list all varibales and functions   
+5. set: command used to list all varibales and functions
+6. BEST="School" : creating a new local variable
+7.    
