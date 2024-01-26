@@ -1,0 +1,31 @@
+Explanation of Specifics:
+1. What is a Server?
+A server is a computer program or device that provides functionality for other programs or devices, known as clients, to access resources and services over a network.
+
+2. Role of the domain name:
+A domain name, like foobar.com, is a human-readable label that maps to a specific IP address. It allows users to access websites and other resources on the internet using memorable names instead of IP addresses.
+
+3.Type of DNS record www is in www.foobar.com:
+The www record in www.foobar.com is a subdomain of the domain foobar.com. It's typically configured as a CNAME (Canonical Name) record pointing to the main domain or an A (Address) record pointing directly to the server's IP address.
+
+4.Role of the web server:
+The web server (Nginx) handles incoming HTTP requests from clients, serves static content directly, and routes dynamic content requests to the application server for processing.
+
+5.Role of the application server:
+The application server executes the website's backend code, processes dynamic content requests from the web server, interacts with the database, and generates responses to be sent back to the client.
+
+6.Role of the database:
+The database (MySQL) stores and manages website data, including user information, content, and other relevant information required for the website's functionality.
+
+7.Server communication with the user's computer:
+The server communicates with the user's computer over the internet using the HTTP protocol. When a user requests the website www.foobar.com, their browser sends an HTTP request to the server's IP address (8.8.8.8), and the server responds with the requested web pages and content.
+
+Issues with the Infrastructure:
+1.Single Point of Failure (SPOF):
+Since all components (web server, application server, and database) are hosted on a single server (8.8.8.8), any failure in the server hardware or software can lead to downtime for the entire website.
+
+2.Downtime during maintenance:
+Deploying new code or performing maintenance tasks on the web server requires restarting the server, resulting in downtime for the website during the maintenance window.
+
+3.Inability to scale:
+The infrastructure cannot easily scale to handle increased incoming traffic as the single server may not have sufficient resources to accommodate high traffic loads. This limitation can result in degraded performance or website downtime during periods of high traffic.
