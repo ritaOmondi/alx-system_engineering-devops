@@ -1,0 +1,29 @@
+Infrastructure Design:
+1.Servers:
+Web Server (Nginx): Responsible for serving static content and acting as a reverse proxy to the application server.
+Application Server: Executes the application logic and generates dynamic content.
+Components:
+Load Balancer (HAproxy): Distributes incoming traffic across multiple servers to ensure scalability and high availability.
+Application Files: The codebase of the website hosted on the application server.
+Database (MySQL): Stores website data and serves as the backend for dynamic content.
+Explanation of Specifics:
+1. Load Balancer (HAproxy):
+Why added: To distribute incoming traffic evenly across multiple servers, improving performance and reliability.
+Distribution Algorithm: Configured with a round-robin algorithm, where each server is used in turn according to the order specified in the configuration.
+Active-Active or Active-Passive: Enabled Active-Passive setup, where one server actively handles requests while the other remains on standby. Active-Passive ensures high availability by quickly switching to the standby server if the active one fails.
+
+2.Database Primary-Replica Cluster (Master-Slave):
+How it works: The primary node (Master) handles write operations and replicates data changes to the replica nodes (Slaves). Replica nodes can handle read operations, offloading read traffic from the primary node and improving scalability.
+Difference between Primary and Replica nodes: The primary node is responsible for handling write operations and maintaining the integrity of the data. Replica nodes primarily serve read operations and can act as failover options if the primary node fails.
+
+Issues with the Infrastructure:
+1.Single Points of Failure (SPOF):
+The load balancer, web server, and application server are SPOFs as there's only one instance of each. If any of these components fail, it can result in downtime for the website.
+
+2.Security Issues:
+Lack of firewall: Exposes servers to potential attacks and unauthorized access.
+No HTTPS: Data transmitted between clients and servers is unencrypted, making it vulnerable to interception and manipulation.
+
+3.No Monitoring:
+Without monitoring tools in place, it's challenging to detect performance issues, resource utilization, or potential security breaches in real-time, leading to potential downtime or security incidents going unnoticed.
+To address these issues, the infrastructure should be enhanced with redundancy, security measures (like firewalls and HTTPS), and robust monitoring solutions to ensure high availability, data integrity, and security.
