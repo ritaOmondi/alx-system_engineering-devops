@@ -29,3 +29,10 @@ Deploying new code or performing maintenance tasks on the web server requires re
 
 3.Inability to scale:
 The infrastructure cannot easily scale to handle increased incoming traffic as the single server may not have sufficient resources to accommodate high traffic loads. This limitation can result in degraded performance or website downtime during periods of high traffic.
+
+
+
+
+
+
+
