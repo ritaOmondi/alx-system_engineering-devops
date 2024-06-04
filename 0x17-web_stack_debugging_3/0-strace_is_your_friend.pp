@@ -1,18 +1,6 @@
-package { 'apache2':
-  ensure => installed,
-}
+# Puppet manifest to fix a bug in wp-setings.php
 
-file { '/etc/apache2/sites-available/default.conf':
-  ensure  => file,
-  source  => 'puppet:///modules/apache/default.conf',
-  require => Package['apache2'],
-  notify  => Service['apache2'],
-}
-
-service { 'apache2':
-  ensure     => running,
-  enable     => true,
-  hasstatus  => true,
-  hasrestart => true,
-  require    => File['/etc/apache2/sites-available/default.conf'],
+exec { 'fix the php extension issue':
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  path    => '/usr/local/bin/:/bin/'
 }
