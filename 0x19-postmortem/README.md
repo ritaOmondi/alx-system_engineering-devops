@@ -37,3 +37,19 @@ Implement a more rigorous testing and deployment process, including load testing
 Provide additional training and knowledge sharing sessions for the engineering team on best practices for debugging and resolving memory-related issues in distributed systems.
 By taking these corrective and preventative measures, the team aims to improve the overall reliability and stability of the e-commerce website, ensuring a seamless experience for our users.
 
+
+
+Sense of Humor on Postmoterm
+
+Issue Summary
+
+On June 6th, 2024, between 9:00 AM and 11:30 AM EAT, our e-commerce website experienced a significant outage, affecting approximately 40% of our users. The root cause of the incident was a memory leak in the backend API server, which we affectionately dubbed the "Memory Vampire." 🧛‍♂️
+
+Timeline
+
+9:00 AM EAT - The issue was first detected by our monitoring system, which triggered an alert indicating high CPU utilization and slow response times from the backend API server. Our on-call engineer, let's call him "Captain Caffeine," sprang into action.
+9:05 AM EAT - Captain Caffeine began investigating the issue, only to find that the API server was consuming an abnormally high amount of memory, causing it to become unresponsive. He let out a loud groan, "Not again!"
+9:15 AM EAT - The engineering team was mobilized, and they started analyzing the application logs and server metrics to identify the root cause of the memory leak. It was starting to feel like a game of "Where's Waldo?" but with lines of code instead of a striped shirt.
+9:30 AM EAT - Suspecting a bug in the latest code deployment, the team started rolling back the deployment, but this did not resolve the issue. They stared at the screen, scratching their heads, wondering, "Did we accidentally summon the Memory Vampire?"
+10:00 AM EAT - The incident was escalated to the engineering manager, and the team decided to scale out the API server by provisioning additional instances. It was like playing a high-stakes game of "Whack-a-Mole," trying to keep up with the memory-hungry server.
+
