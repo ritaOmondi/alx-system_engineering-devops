@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set the path to the Gunicorn application
 APP_PATH="/home/ubuntu/AirBnB_clone_v4/web_dynamic/2-hbnb.py"
