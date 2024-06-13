@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Set the path to the Gunicorn application
+APP_PATH="/home/ubuntu/AirBnB_clone_v4/web_dynamic/2-hbnb.py"
+
+# Set the path to the Gunicorn PID file
+PID_FILE="/tmp/gunicorn.pid"
+
+# Set the number of worker processes
+WORKERS=3
+
+# Set the port to bind the Gunicorn server to
+PORT=5003
+
+# Check if the Gunicorn server is running
+if [[ -f "$PID_FILE" ]]; then
+  PID=$(cat "$PID_FILE")
+  if kill -0 "$PID" 2>/dev/null; then
+    echo "Gracefully reloading Gunicorn..."
+    kill -HUP "$PID"
+    exit 0
+  else
+    echo "Gunicorn is not running. Starting a new instance..."
+  fi
+else
+  echo "Gunicorn is not running. Starting a new instance..."
+fi
+
+# Start the Gunicorn server
+/home/ubuntu/AirBnB_clone_v4/venv/bin/gunicorn --pid "$PID_FILE" --workers "$WORKERS" --bind "0.0.0.0:$PORT" "$APP_PATH"
